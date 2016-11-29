@@ -42,5 +42,11 @@ namespace HTMLcode
                 MessageBox.Show(ex.Message, "Błąd ładowania", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                button1_Click(sender, null);
+        }
     }
 }
